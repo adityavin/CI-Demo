@@ -6,7 +6,7 @@
 	<target name="deployRunAllTests">
 		<sf:deploy username="${sf.username}"
 				password="${sf.password}"
-				serverurl="${sf.serverurl}"
+				serverurl="${sf.server}"
 				runAllTests="true"
 				logType="Detail"
 				deployRoot="src"/>
@@ -15,7 +15,7 @@
 	<target name="undeployCode">
 		<sf:deploy username="${sf.username}"
 				password="${sf.password}"
-				serverurl="${sf.serverurl}"
+				serverurl="${sf.server}"
 				deployRoot="undeploy"/>
 	</target>
 
